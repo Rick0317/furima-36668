@@ -5,7 +5,7 @@
 | -------- | ------ | ------------------------- |
 | Name     | string | null: false               |
 | Email    | string | null: false               | 
-| Password | string | null: false               |
+| encrypted_password | string | null: false               |
 
 ### Associations
 - has_many :items
