@@ -1,24 +1,58 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users table
+| Column   | Type   | Options                   | 
+| -------- | ------ | ------------------------- |
+| Name     | string | null: false               |
+| Email    | string | null: false               | 
+| Password | string | null: false               |
 
-Things you may want to cover:
+### Associations
+- has_many :items
+- has_many :comments
+- has_one  :purchaser
 
-* Ruby version
+## items table
+| Column      | Type          | Options                   |
+| ----------- | ------------- | ------------------------- |
+| Name        | string        | null: false               | 
+| Image       | activeStorage |                           |
+| Description | string        | null: false               |
+| User        | references    |                           |
 
-* System dependencies
+### Associations
+- belongs_to :user
+- has_many :comments
+- has_one  :purchaser
 
-* Configuration
+## comments table
+| Column  | Type       | Options                   | 
+| ------- | ---------- | ------------------------- |
+| Content | string     | null: false               |
+| User    | references |                           |
+| Item    | references |                           |
 
-* Database creation
+### Associations
+- belongs_to :user
+- belongs_to :comment
 
-* Database initialization
+## purchasers table
+| Column | Type       | Options                   | 
+| ------ | ---------- | ------------------------- |
+| Name   | string     | null: false               |
+| User   | references |                           |
 
-* How to run the test suite
+### Associations
+- has_one :address
+- belongs_to :user
+- belongs_to :item
 
-* Services (job queues, cache servers, search engines, etc.)
+## addresses table
+| Column    | Type       | Options                   | 
+| --------- | ---------- | ------------------------- |
+| Content   | string     | null: false               |
+| Purchaser | references |                           | 
 
-* Deployment instructions
+### Associations
+- belongs_to :purchaser
 
-* ...
