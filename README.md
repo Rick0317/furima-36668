@@ -1,10 +1,12 @@
 # README
 
 ## users table
-| Column   | Type   | Options                   | 
-| -------- | ------ | ------------------------- |
-| Name     | string | null: false               |
-| Email    | string | null: false               | 
+| Column             | Type   | Options                   | 
+| ------------------ | ------ | ------------------------- |
+| nickname           | string | null: false               |
+| email              | string | null: false, unique: true | 
+| kanji_name         | string | null: false               |
+| kana_name          | string | null: false               |
 | encrypted_password | string | null: false               |
 
 ### Associations
@@ -15,10 +17,10 @@
 ## items table
 | Column      | Type          | Options                   |
 | ----------- | ------------- | ------------------------- |
-| Name        | string        | null: false               | 
-| Image       | activeStorage |                           |
-| Description | string        | null: false               |
-| User        | references    |                           |
+| name        | string        | null: false               | 
+| price       | int           | null: false               |
+| description | text          | null: false               |
+| user        | references    | foreign_key: true         |
 
 ### Associations
 - belongs_to :user
@@ -28,9 +30,9 @@
 ## comments table
 | Column  | Type       | Options                   | 
 | ------- | ---------- | ------------------------- |
-| Content | string     | null: false               |
-| User    | references |                           |
-| Item    | references |                           |
+| content | string     | null: false               |
+| user    | references | foreign_key: true         |
+| item    | references | foreign_key: true         |
 
 ### Associations
 - belongs_to :user
@@ -39,8 +41,8 @@
 ## purchasers table
 | Column | Type       | Options                   | 
 | ------ | ---------- | ------------------------- |
-| Name   | string     | null: false               |
-| User   | references |                           |
+| user   | references | foreign_key: true         |
+| item   | references | foreign_key: true         |
 
 ### Associations
 - has_one :address
@@ -48,10 +50,14 @@
 - belongs_to :item
 
 ## addresses table
-| Column    | Type       | Options                   | 
-| --------- | ---------- | ------------------------- |
-| Content   | string     | null: false               |
-| Purchaser | references |                           | 
+| Column        | Type       | Options                   | 
+| ------------- | ---------- | ------------------------- |
+| mailing       | string     | null: false               |
+| town          | string     | null: false               |          
+| house_number  | string     | null: false               |
+| building_name | string     |                           |
+| phone_number  | int        | null: false               |          
+| purchaser     | references | foreign_key: true         | 
 
 ### Associations
 - belongs_to :purchaser
