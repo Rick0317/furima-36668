@@ -10,7 +10,7 @@ class DeviseCreateUserManages < ActiveRecord::Migration[6.0]
       t.string :kana_last_name,     null: false, default: ""
       t.string :kana_first_name,    null: false, default: ""
       t.date   :birthday,           null: false
-      t.string :email,              null: false, unique: true, default: ""
+      t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
       ## Recoverable
