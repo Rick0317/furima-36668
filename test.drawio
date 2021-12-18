@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="k-2F5606LWpQRLoaVGzE" name="Page-1">
-        <mxGraphModel dx="856" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1139" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -280,8 +280,8 @@
                 <mxCell id="115" value="category_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
                     <mxGeometry x="480" y="460" width="80" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="116" value="prefecture_id" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="70" y="810" width="90" height="20" as="geometry"/>
+                <mxCell id="116" value="region_id" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="85" y="810" width="60" height="20" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
