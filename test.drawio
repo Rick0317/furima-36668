@@ -197,7 +197,7 @@
                     <mxGeometry x="30" width="150" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="84" value="Table" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="530" width="180" height="290" as="geometry"/>
+                    <mxGeometry x="40" y="540" width="180" height="290" as="geometry"/>
                 </mxCell>
                 <mxCell id="85" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="84">
                     <mxGeometry y="30" width="180" height="30" as="geometry"/>
@@ -265,20 +265,23 @@
                 <mxCell id="109" value="birthday" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="70" y="430" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="110" value="state" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="495" y="339" width="40" height="20" as="geometry"/>
+                <mxCell id="110" value="state_id" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="485" y="339" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="111" value="shipping_cost" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="490" y="370" width="90" height="20" as="geometry"/>
+                <mxCell id="111" value="shipping_cost_id" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="485" y="370" width="100" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="112" value="ship_length" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="500" y="400" width="80" height="20" as="geometry"/>
+                <mxCell id="112" value="ship_length_id" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="495" y="400" width="90" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="114" value="region" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="495" y="430" width="50" height="20" as="geometry"/>
+                <mxCell id="114" value="region_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="430" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="115" value="category" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="490" y="460" width="60" height="20" as="geometry"/>
+                <mxCell id="115" value="category_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="460" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" value="prefecture_id" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="810" width="90" height="20" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

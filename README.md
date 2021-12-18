@@ -15,19 +15,19 @@
 ### Associations
 - has_many :items
 - has_many :comments
-- has_many :purchaser
+- has_many :purchases
 
 ## items table
 | Column        | Type          | Options                   |
 | ------------- | ------------- | ------------------------- |
 | name          | string        | null: false               | 
-| price         | int           | null: false               |
-| description   | text          | null: false               |
-| state         | string        | null: false               |
-| shipping_cost | string        | null: false               |
-| region        | string        | null: false               |
-| ship_length   | string        | null: false               |
-| category      | string        | null: false               |
+| price           | integer       | null: false               |
+| description      | text          | null: false               |
+| state_id         | integer        | null: false               |
+| shipping_cost_id | integer       | null: false               |
+| region_id        | integer       | null: false               |
+| ship_length_id   | integer       | null: false               |
+| category_id      | integer        | null: false               |
 | user          | references    | foreign_key: true         |
 
 ### Associations
@@ -61,6 +61,7 @@
 | Column        | Type       | Options                   | 
 | ------------- | ---------- | ------------------------- |
 | mailing       | string     | null: false               |
+| prefecture_id | integer    | null: false               |   
 | town          | string     | null: false               |          
 | house_number  | string     | null: false               |
 | building_name | string     |                           |
