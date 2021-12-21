@@ -21,11 +21,11 @@ RSpec.describe UserManage, type: :model do
     it 'メールアドレスに@がないと登録できない' do
       @user.email = 'furima.com'
       @user.valid?
-      expect(@user.errors.full_messages).to include("Email is invalid")
+      expect(@user.errors.full_messages).to include('Email is invalid')
     end
     it 'パスワードが空だと登録できない' do
       @user.password = ''
-      @user.password_confirmation = '' 
+      @user.password_confirmation = ''
       @user.valid?
       expect(@user.errors.full_messages).to include("Password can't be blank")
     end
@@ -33,7 +33,7 @@ RSpec.describe UserManage, type: :model do
       @user.password = 'abc12'
       @user.password_confirmation = 'abc12'
       @user.valid?
-      expect(@user.errors.full_messages).to include("Password is too short (minimum is 6 characters)")
+      expect(@user.errors.full_messages).to include('Password is too short (minimum is 6 characters)')
     end
     it 'パスワードとその確認が一致していないと登録できない' do
       @user = FactoryBot.build(:user_manage)
