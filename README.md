@@ -1,6 +1,6 @@
 # README
 
-## users table
+## user_manages table
 | Column             | Type   | Options                   | 
 | ------------------ | ------ | ------------------------- |
 | nickname           | string | null: false               |
@@ -28,33 +28,33 @@
 | region_id        | integer       | null: false                    |
 | ship_length_id   | integer       | null: false                    |
 | category_id      | integer       | null: false                    |
-| user             | references    | null: false, foreign_key: true |
+| user_manage      | references    | null: false, foreign_key: true |
 
 ### Associations
-- belongs_to :user
+- belongs_to :user_manage
 - has_many :comments
 - has_one  :purchase
 
 ## comments table
-| Column  | Type       | Options                        | 
-| ------- | ---------- | ------------------------------ |
-| content | string     | null: false                    |
-| user    | references | null: false, foreign_key: true |
-| item    | references | null: false, foreign_key: true |
+| Column      | Type       | Options                        | 
+| ----------- | ---------- | ------------------------------ |
+| content     | string     | null: false                    |
+| user_manage | references | null: false, foreign_key: true |
+| item        | references | null: false, foreign_key: true |
 
 ### Associations
-- belongs_to :user
+- belongs_to :user_manage
 - belongs_to :comment
 
 ## purchases table
-| Column | Type       | Options                        | 
-| ------ | ---------- | ------------------------------ |
-| user   | references | null: false, foreign_key: true |
-| item   | references | null: false, foreign_key: true |
+| Column      | Type       | Options                        | 
+| ----------- | ---------- | ------------------------------ |
+| user_manage | references | null: false, foreign_key: true |
+| item        | references | null: false, foreign_key: true |
 
 ### Associations
 - has_one :address
-- belongs_to :user
+- belongs_to :user_manage
 - belongs_to :item
 
 ## addresses table

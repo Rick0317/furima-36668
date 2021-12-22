@@ -21,4 +21,9 @@ class UserManage < ApplicationRecord
      message: 'First name kana is invalid. Input full-width katakana characters' } do
     validates :kana_first_name
   end
+  with_options presence: true, format: { with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i,
+    message: 'Password is invalid. Include both letters and numbers' } do
+   validates :password
+ end
+  validates :birthday, presence: true
 end
