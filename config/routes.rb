@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :user_manages
+  devise_for :users
   root to: "items#index"
   resources :items, except: :create
 end
