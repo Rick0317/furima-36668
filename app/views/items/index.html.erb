@@ -129,8 +129,9 @@
     <ul class='item-lists'>
 
      <% if Item.exists?%>
+      <%  @items.each do |item|%>
       <li class='list'>
-        <%  @items.each do |item|%>
+      
         
         <div class='item-img-content'>
           <%= link_to image_tag(item.image, class: "item-img"), item_path(item.id) %>
@@ -154,8 +155,9 @@
             </div>
           </div>
         </div>
-        <% end %>
+        
       </li>
+      <% end %>
      <% else %>
     
   
