@@ -39,17 +39,17 @@
 | Column      | Type       | Options                        | 
 | ----------- | ---------- | ------------------------------ |
 | content     | string     | null: false                    |
-| user_manage | references | null: false, foreign_key: true |
+| user        | references | null: false, foreign_key: true |
 | item        | references | null: false, foreign_key: true |
 
 ### Associations
-- belongs_to :user_manage
+- belongs_to :user
 - belongs_to :comment
 
 ## purchases table
 | Column      | Type       | Options                        | 
 | ----------- | ---------- | ------------------------------ |
-| user_manage | references | null: false, foreign_key: true |
+| user        | references | null: false, foreign_key: true |
 | item        | references | null: false, foreign_key: true |
 
 ### Associations

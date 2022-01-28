@@ -18,6 +18,7 @@ class Item < ApplicationRecord
   
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :category, :state, :shipping_cost, :region, :ship_length
-
+  
+  has_one :order
  
 end
